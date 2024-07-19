@@ -1,0 +1,536 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    
+    <title>Product list with cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution { font-size: 11px; text-align: center; }
+      .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+  </head>
+  <body class="body">
+
+    <main class="menu">
+      <section class="menu__header">
+          <h2 class="header__title">Desserts</h2>
+      </section>
+
+      <section class="cards">
+          <section class="menu__card waffle">
+              <div class="card__banner">
+        
+                <img src="assets/images/image-waffle-mobile.jpg" alt="Waffle with Berries" class="banner__image">
+                <button class="banner__button"><img src="assets/images/icon-add-to-cart.svg" alt="add to cart">Add to Cart</button>
+                <button class="banner__button-adc"><img src="assets/images/icon-decrement-quantity.svg" alt="remova" class="decrement"> <span class="qtd-item">1</span><img src="assets/images/icon-increment-quantity.svg" alt="adcione" class="increment"></button>
+        
+              </div>
+        
+              <div class="card__description">
+                <h4 class="description__title">Waffle</h4>
+                <h3 class="description__p">Waffle with Berries</h3>
+                <p class="description__price">$6.50</p>
+              </div>
+              
+            </section>
+        
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+        
+            <section class="menu__card creme">
+              <div class="card__banner">
+        
+                <img src="assets/images/image-creme-brulee-mobile.jpg" alt="Vanilla Bean Crème Brûlée" class="banner__image">
+                <button class="banner__button"><img src="assets/images/icon-add-to-cart.svg" alt="add to cart">Add to Cart</button>
+                <button class="banner__button-adc"><img src="assets/images/icon-decrement-quantity.svg" alt="remova" class="decrement"> <span class="qtd-item">1</span> <img src="assets/images/icon-increment-quantity.svg" alt="adcione" class="increment"></button>
+        
+              </div>
+        
+              <div class="card__description">
+                <h4 class="description__title">Crème Brûlée</h4>
+                <h3 class="description__p">Vanilla Bean Crème Brûlée</h3>
+                <p class="description__price">$7.00</p>
+              </div>
+              
+            </section>
+        
+        <!-- -------------------------------------------------------------------------------------------------------------------- -->
+        
+            <section class="menu__card macaron">
+              <div class="card__banner">
+        
+                <img src="assets/images/image-macaron-mobile.jpg" alt="Macaron Mix of Five" class="banner__image">
+                <button class="banner__button"><img src="assets/images/icon-add-to-cart.svg" alt="add to cart">Add to Cart</button>
+                <button class="banner__button-adc"><img src="assets/images/icon-decrement-quantity.svg" alt="remova" class="decrement"> <span class="qtd-item">1</span> <img src="assets/images/icon-increment-quantity.svg" alt="adcione" class="increment"></button>
+        
+              </div>
+        
+              <div class="card__description">
+                <h4 class="description__title">Macaron</h4>
+                <h3 class="description__p">Macaron Mix of Five</h3>
+                <p class="description__price">$8.00</p>
+              </div>
+              
+            </section>
+        
+        <!-- --------------------------------------------------------------------------------------------------------------------------- -->
+        
+            <section class="menu__card tiramisu">
+              <div class="card__banner">
+        
+                <img src="assets/images/image-tiramisu-mobile.jpg" alt="Classic Tiramisu" class="banner__image">
+                <button class="banner__button"><img src="assets/images/icon-add-to-cart.svg" alt="add to cart">Add to Cart</button>
+                <button class="banner__button-adc"><img src="assets/images/icon-decrement-quantity.svg" alt="remova" class="decrement"> <span class="qtd-item">1</span> <img src="assets/images/icon-increment-quantity.svg" alt="adcione" class="increment"></button>
+        
+              </div>
+        
+              <div class="card__description">
+                <h4 class="description__title">Tiramisu</h4>
+                <h3 class="description__p">Classic Tiramisu</h3>
+                <p class="description__price">$5.50</p>
+              </div>
+              
+            </section>
+        
+        <!-- --------------------------------------------------------------------------------------------------------------------------- -->
+        
+            <section class="menu__card baklava">
+              <div class="card__banner">
+        
+                <img src="/assets/images/image-baklava-mobile.jpg" alt="Classic Tiramisu" class="banner__image">
+                <button class="banner__button"><img src="assets/images/icon-add-to-cart.svg" alt="add to cart">Add to Cart</button>
+                <button class="banner__button-adc"><img src="assets/images/icon-decrement-quantity.svg" alt="remova" class="decrement"> <span class="qtd-item">1</span> <img src="assets/images/icon-increment-quantity.svg" alt="adcione" class="increment"></button>
+        
+              </div>
+        
+              <div class="card__description">
+                <h4 class="description__title">Baklava</h4>
+                <h3 class="description__p">Pistachio Baklava</h3>
+                <p class="description__price">$4.00</p>
+              </div>
+              
+            </section>
+        
+        <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+        
+            <section class="menu__card pie">
+              <div class="card__banner">
+        
+                <img src="assets/images/image-meringue-mobile.jpg" alt="Lemon Meringue Pie" class="banner__image">
+                <button class="banner__button"><img src="assets/images/icon-add-to-cart.svg" alt="add to cart">Add to Cart</button>
+                <button class="banner__button-adc"><img src="assets/images/icon-decrement-quantity.svg" alt="remova" class="decrement"> <span class="qtd-item">1</span> <img src="assets/images/icon-increment-quantity.svg" alt="adcione" class="increment"></button>
+        
+              </div>
+        
+              <div class="card__description">
+                <h4 class="description__title">Pie</h4>
+                <h3 class="description__p">Lemon Meringue Pie</h3>
+                <p class="description__price">$5.00</p>
+              </div>
+              
+            </section>
+        
+            <!-- ------------------------------------------------------------------------------------------------------------------------ -->
+        
+            <section class="menu__card cake">
+              <div class="card__banner">
+        
+                <img src="assets/images/image-cake-mobile.jpg" alt="Red Velvet Cake" class="banner__image">
+                <button class="banner__button"><img src="assets/images/icon-add-to-cart.svg" alt="add to cart">Add to Cart</button>
+                <button class="banner__button-adc"><img src="assets/images/icon-decrement-quantity.svg" alt="remova" class="decrement"> <span class="qtd-item">1</span> <img src="assets/images/icon-increment-quantity.svg" alt="adcione" class="increment"></button>
+        
+              </div>
+        
+              <div class="card__description">
+                <h4 class="description__title">Cake</h4>
+                <h3 class="description__p">Red Velvet Cake</h3>
+                <p class="description__price">$4.50</p>
+              </div>
+              
+            </section>
+        
+        <!-- -------------------------------------------------------------------------------------------------------------------------- -->
+        
+            <section class="menu__card brownie">
+              <div class="card__banner">
+        
+                <img src="assets/images/image-brownie-mobile.jpg" alt="Salted Caramel Brownie" class="banner__image">
+                <button class="banner__button"><img src="assets/images/icon-add-to-cart.svg" alt="add to cart">Add to Cart</button>
+                <button class="banner__button-adc"><img src="assets/images/icon-decrement-quantity.svg" alt="remova" class="decrement"> <span class="qtd-item">1</span> <img src="assets/images/icon-increment-quantity.svg" alt="adcione" class="increment"></button>
+        
+              </div>
+        
+              <div class="card__description">
+                <h4 class="description__title">Brownie</h4>
+                <h3 class="description__p">Salted Caramel Brownie</h3>
+                <p class="description__price">$4.50</p>
+              </div>
+              
+            </section>
+        
+            <!-- -------------------------------------------------------------------------------------------------------------------- -->
+            <section class="menu__card panna">
+              <div class="card__banner">
+        
+                <img src="assets/images/image-panna-cotta-mobile.jpg" alt="Salted Caramel Brownie" class="banner__image">
+                <button class="banner__button"><img src="assets/images/icon-add-to-cart.svg" alt="add to cart">Add to Cart</button>
+                <button class="banner__button-adc"><img src="assets/images/icon-decrement-quantity.svg" alt="remova" class="decrement"> <span class="qtd-item">1</span> <img src="assets/images/icon-increment-quantity.svg" alt="adcione" class="increment"></button>
+        
+              </div>
+        
+              <div class="card__description">
+                <h4 class="description__title">Panna Cotta</h4>
+                <h3 class="description__p">Vanilla Panna Cotta</h3>
+                <p class="description__price">$6.50</p>
+              </div>
+              
+            </section>
+        
+      </section>
+
+      
+      </main>
+
+      <section class="cart">
+          <!-- quando nenhum item estiver no carrinho: -->
+          <div class="cart__empty"> 
+              <h2 class="empty__title">Your Cart (0)</h2>
+              <img src="assets/images/illustration-empty-cart.svg" alt="" class="empty__image">
+              <p class="empty__p">Your added items will appear here</p>
+          </div>
+      
+          <!-- quando adcionamos um item: -->
+          <div class="cart__selected">
+              
+              <h2 class="selected__title">Your Cart (<span class="title__qtd">1</span>)</h2>
+              
+            <div class="selected-container">
+              <ul class="selected__items">
+                <li class="items__item prato remove">
+                  <div class="item__description">
+                    <p class="description__t">Waffle</p>
+                    <span class="description__qtd">1x</span>
+                    <span class="description__value">$6.50</span>
+                    <span class="description__total">$6.50</span>
+                  </div>
+      
+                  <img src="assets/images/icon-remove-item.svg" alt="remove item" class="item__remove">
+      
+                </li>
+      
+                <li class="items__item prato remove">
+                  <div class="item__description">
+                    <p class="description__t">Vanilla Bean Crème Brûlée</p>
+                    <span class="description__qtd">1x</span>
+                    <span class="description__value">$7.00</span>
+                    <span class="description__total">$7.00</span>
+                  </div>
+      
+                  <img src="assets/images/icon-remove-item.svg" alt="remove item" class="item__remove">
+      
+                </li>
+      
+                <li class="items__item prato remove">
+                  <div class="item__description">
+                    <p class="description__t">Macaron Mix of Five</p>
+                    <span class="description__qtd">1x</span>
+                    <span class="description__value">$8.00</span>
+                    <span class="description__total">$8.00</span>
+                  </div>
+      
+                  <img src="assets/images/icon-remove-item.svg" alt="remove item" class="item__remove">
+      
+                </li>
+                
+                <li class="items__item prato remove">
+                  <div class="item__description">
+                    <p class="description__t">Classic Tiramisu</p>
+                    <span class="description__qtd">1x</span>
+                    <span class="description__value">$5.50</span>
+                    <span class="description__total">$5.50</span>
+                  </div>
+      
+                  <img src="assets/images/icon-remove-item.svg" alt="remove item" class="item__remove">
+      
+                </li>
+
+                <li class="items__item prato remove">
+                  <div class="item__description">
+                    <p class="description__t">Pistachio Baklava</p>
+                    <span class="description__qtd">1x</span>
+                    <span class="description__value">$4.00</span>
+                    <span class="description__total">$4.00</span>
+                  </div>
+      
+                  <img src="assets/images/icon-remove-item.svg" alt="remove item" class="item__remove">
+      
+                </li>
+
+                <li class="items__item prato remove">
+                  <div class="item__description">
+                    <p class="description__t">Lemon Meringue Pie</p>
+                    <span class="description__qtd">1x</span>
+                    <span class="description__value">$5.00</span>
+                    <span class="description__total">$5.00</span>
+                  </div>
+      
+                  <img src="assets/images/icon-remove-item.svg" alt="remove item" class="item__remove">
+      
+                </li>
+
+                <li class="items__item prato remove">
+                  <div class="item__description">
+                    <p class="description__t">Red Velvet Cake</p>
+                    <span class="description__qtd">1x</span>
+                    <span class="description__value">$4.50</span>
+                    <span class="description__total">$4.50</span>
+                  </div>
+      
+                  <img src="assets/images/icon-remove-item.svg" alt="remove item" class="item__remove">
+      
+                </li>
+
+                <li class="items__item prato remove">
+                  <div class="item__description">
+                    <p class="description__t">Salted Caramel Brownie</p>
+                    <span class="description__qtd">1x</span>
+                    <span class="description__value">$4.50</span>
+                    <span class="description__total">$4.50</span>
+                  </div>
+      
+                  <img src="assets/images/icon-remove-item.svg" alt="remove item" class="item__remove">
+      
+                </li>
+
+                <li class="items__item prato remove">
+                  <div class="item__description">
+                    <p class="description__t">Vanilla Panna Cotta</p>
+                    <span class="description__qtd">1x</span>
+                    <span class="description__value">$6.50</span>
+                    <span class="description__total">$6.50</span>
+                  </div>
+      
+                  <img src="assets/images/icon-remove-item.svg" alt="remove item" class="item__remove">
+      
+                </li>
+              </ul>
+      
+              <div class="selected__order">
+                
+                <div class="order__price">
+                  <p class="price__p">Order Total</p>
+                  <h2 class="price__number">$46.50</h2>
+                </div>  
+                        
+                  <div class="order__carbon-neutral">
+                    <img src="assets/images/icon-carbon-neutral.svg" alt="carbon neutral" class="carbon__image">
+                    <p class="carbon-neutral__p">This is a <strong>carbon-neutral</strong> delivery</p>
+                  </div>
+      
+                  <button class="order__confirm">Confirm Order</button>
+              
+      
+              </div>
+      
+          </div>
+      
+      </section>
+  
+
+    <section class="janela-modal">
+      <div class="janela-modal__modal">
+
+          <div class="modal__header">
+              <img src="assets/images/icon-order-confirmed.svg" alt="" class="order confirmed">
+              <h1 class="header__title">Order Confirmed</h1>
+              <p class="header__p">We hope you enjoy your food!</p>
+          </div>
+        
+            <div class="modal__modal-cart">
+
+              <ul class="modal-cart__items">
+                <li class="items__item order-item remove">
+                  <div class="item__description">
+                    <img src="/assets/images/image-waffle-thumbnail.jpg" alt="Waffle" class="description__image-modal">
+                    
+                    <div class="description__information">
+                      <p class="information__t-modal">Waffle with Berries</p>
+                      <p class="information__qtd-modal"><span class="qtd-modal__numb">1x</span>  <span class="qtd-modal__price">$6.50</span></p>
+                    </div>
+                    
+                    
+                  </div>
+                  
+                  <span class="item__total-modal">$6.50</span>
+                
+    
+                </li>
+      
+                
+                  <li class="items__item order-item remove">
+                    <div class="item__description">
+                      <img src="/assets/images/image-creme-brulee-thumbnail.jpg" alt="Crème" class="description__image-modal">
+                      
+                      <div class="description__information">
+                        <p class="information__t-modal">Vanilla Bean Crème Brûlée</p>
+                        <p class="information__qtd-modal"><span class="qtd-modal__numb">1x</span>  <span class="qtd-modal__price">$7.00</span></p>
+                      </div>
+                      
+                      
+                    </div>
+                    
+                    <span class="item__total-modal">$7.00</span>
+                  
+      
+                  </li>
+
+                  
+      
+                  <li class="items__item order-item remove">
+                    <div class="item__description">
+                      <img src="/assets/images/image-macaron-thumbnail.jpg" alt="Tiramisu" class="description__image-modal">
+                      
+                      <div class="description__information">
+                        <p class="information__t-modal">Macaron Mix of Five</p>
+                        <p class="information__qtd-modal"><span class="qtd-modal__numb">1x</span>  <span class="qtd-modal__price">$8.00</span></p>
+                      </div>
+                      
+                      
+                    </div>
+                    
+                    <span class="item__total-modal">$8.00</span>
+                  
+      
+                  </li>
+
+                  <li class="items__item order-item remove">
+                    <div class="item__description">
+                      <img src="assets/images/image-tiramisu-thumbnail.jpg" alt="Tiramisu" class="description__image-modal">
+                      
+                      <div class="description__information">
+                        <p class="information__t-modal">Classic Tiramisu</p>
+                        <p class="information__qtd-modal"><span class="qtd-modal__numb">1x</span>  <span class="qtd-modal__price">$5.50</span></p>
+                      </div>
+                      
+                      
+                    </div>
+                    
+                    <span class="item__total-modal">$5.50</span>
+                  
+      
+                  </li>
+
+                  <li class="items__item order-item remove">
+                    <div class="item__description">
+                      <img src="/assets/images/image-baklava-thumbnail.jpg" alt="Baklava" class="description__image-modal">
+                      
+                      <div class="description__information">
+                        <p class="information__t-modal">Pistachio Baklava</p>
+                        <p class="information__qtd-modal"><span class="qtd-modal__numb">1x</span>  <span class="qtd-modal__price">$4.00</span></p>
+                      </div>
+                      
+                      
+                    </div>
+                    
+                    <span class="item__total-modal">$4.00</span>
+                  
+      
+                  </li>
+        
+                  <li class="items__item order-item remove">
+                    <div class="item__description">
+                      <img src="assets/images/image-meringue-thumbnail.jpg" alt="Meringue" class="description__image-modal">
+                      
+                      <div class="description__information">
+                        <p class="information__t-modal">Lemon Meringue Pie</p>
+                        <p class="information__qtd-modal"><span class="qtd-modal__numb">1x</span>  <span class="qtd-modal__price">$5.00</span></p>
+                      </div>
+                      
+                      
+                    </div>
+                    
+                    <span class="item__total-modal">$5.00</span>
+                  
+      
+                  </li>
+
+                  <li class="items__item order-item remove">
+                    <div class="item__description">
+                      <img src="assets/images/image-cake-thumbnail.jpg" alt="Cake" class="description__image-modal">
+                      
+                      <div class="description__information">
+                        <p class="information__t-modal">Red Velvet Cake</p>
+                        <p class="information__qtd-modal"><span class="qtd-modal__numb">1x</span>  <span class="qtd-modal__price">$4.50</span></p>
+                      </div>
+                      
+                      
+                    </div>
+                    
+                    <span class="item__total-modal">$4.50</span>
+                  
+      
+                  </li>
+
+                  <li class="items__item order-item remove">
+                    <div class="item__description">
+                      <img src="assets/images/image-brownie-thumbnail.jpg" alt="Brownie" class="description__image-modal">
+                      
+                      <div class="description__information">
+                        <p class="information__t-modal">Salted Caramel Brownie</p>
+                        <p class="information__qtd-modal"><span class="qtd-modal__numb">1x</span>  <span class="qtd-modal__price">$4.50</span></p>
+                      </div>
+                      
+                      
+                    </div>
+                    
+                    <span class="item__total-modal">$4.50</span>
+                  
+      
+                  </li>
+
+                  <li class="items__item order-item remove">
+                    <div class="item__description">
+                      <img src="assets/images/image-panna-cotta-thumbnail.jpg" alt="Panna Cotta" class="description__image-modal">
+                      
+                      <div class="description__information">
+                        <p class="information__t-modal">Vanilla Panna Cotta</p>
+                        <p class="information__qtd-modal"><span class="qtd-modal__numb">1x</span>  <span class="qtd-modal__price">$6.50</span></p>
+                      </div>
+                      
+                      
+                    </div>
+                    
+                    <span class="item__total-modal">$6.50</span>
+                  
+      
+                  </li>
+                  
+                </ul>    
+              
+                
+                
+                  <div class="modal-cart__order">
+                    <p class="order__total">Order Total</p>
+                    <h2 class="order__total-value">$46.50</h2>
+                  </div>
+                
+
+            </div>
+            
+            <button class="modal__new-order">Start New Order</button>
+              
+          
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+
+  </body>
